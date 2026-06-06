@@ -224,7 +224,7 @@ async def main():
     load_env_file()
     while True:
         print("\n=== Travel Planner Menu ===")
-        print("1. Run Success Demo (Japan, Budget $800)")
+        print("1. Run Success Demo (Japan, Budget $1500)")
         print("2. Run Self-Correction Demo (Japan, Budget $150)")
         print("3. Run Failure Demo (Japan, Budget $80)")
         print("4. Custom Input")
@@ -232,7 +232,7 @@ async def main():
         
         choice = input("Choice (1-5): ").strip()
         if choice == "1":
-            await run_planner("Japan", 800.0)
+            await run_planner("Japan", 1500.0)
         elif choice == "2":
             await run_planner("Japan", 150.0)
         elif choice == "3":
